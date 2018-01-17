@@ -1,0 +1,33 @@
+{
+
+  "description": "Batoto backup",
+  "manifest_version": 2,
+  "name": "Batoto backup",
+  "version": "1.0",
+  "icons": {
+    "16": "icons/batoto.png"
+  },
+  "permissions": [
+    "tabs",
+    "bookmarks",
+    "*://bato.to/"
+  ],
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Batoto backup",
+    "default_icon": {
+        "16": "icons/batoto.png"
+    }
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "batoto-backup@valdars.eu",
+      "strict_min_version": "42.0"
+    }
+  }
+}
